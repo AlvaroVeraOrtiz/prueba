@@ -14,6 +14,7 @@ public class Jarra {
 		// Comentario incluido para pruebas 
 		System.out.println("Aqui escribimos todos"); 
 	}
+<<<<<<< HEAD
 }
 
 public void llenaDesde(Jarra j){
@@ -24,4 +25,8 @@ public void llenaDesde(Jarra j){
 }
 public String toString(){
 	return ("("+this.capacidad+","+this.cantidad+")");
+=======
+	public bool llena(){ return this.cantidad=this.capacidad; } 
+	public bool vacia(){ return this.cantidad=0; }
+>>>>>>> a4172629791fa97316664e6437e6ef214e86ab51
 }
