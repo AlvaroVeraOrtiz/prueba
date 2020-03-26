@@ -13,7 +13,26 @@ public class Jarra {
 		// Comentario incluido para pruebas 
 		System.out.println("Aqui escribimos todos"); 
 	}
-	public bool llena(){ return this.cantidad=this.capacidad; } 
-	public bool vacia(){ return this.cantidad=0; }
+	
+	public bool llena(){
+		return this.cantidad=this.capacidad;
+	}
+	
+	public bool vacia(){
+		return this.cantidad=0;
+	}
+
+}
+
+	public void llenaDesde(Jarra j){
+		while((this.cantidad<this.capacidad)&&(j.cantidad>0)){
+			this.cantidad++;
+			j.cantidad--;
+		}
+	}
+
+	public String toString(){
+		return ("("+this.capacidad+","+this.cantidad+")");
+	}
 
 }
