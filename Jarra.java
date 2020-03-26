@@ -13,7 +13,8 @@ public class Jarra {
 		// Comentario incluido para pruebas 
 		System.out.println("Aqui escribimos todos"); 
 	}
-	
+	public int capacidad(){ return this.capacidad; } 
+	public int cantidad(){ return this.cantidad; }
 	public bool llena(){
 		return this.cantidad=this.capacidad;
 	}
